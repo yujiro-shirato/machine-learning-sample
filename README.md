@@ -18,4 +18,5 @@ source myenv/bin/activate
 
 # 実行方法
 export FLASK_APP=chat
+
 flask run
