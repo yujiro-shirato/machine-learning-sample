@@ -1,16 +1,19 @@
 # インストール
 pip install Flask
+
 pip install requests
+
 pip install pandas
+
 pip install scikit-learn
 
 # 仮想環境の作成（例）
 python -m venv myenv
 
-# 仮想環境を有効化
-# Windowsの場合
+## 仮想環境を有効化
+### Windowsの場合
 myenv\Scripts\activate
-# macOS / Linuxの場合
+### macOS / Linuxの場合
 source myenv/bin/activate
 
 # 実行方法
