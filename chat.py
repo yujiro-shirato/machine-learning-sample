@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 import logic
 import poke
+import openai_api
 
 app = Flask(__name__)
 
@@ -20,8 +21,8 @@ def send_message():
         chat_messages.append(formatted_user_message)
 
         # Botからの応答を生成
-        # bot_response = logic.get_bot_response(user_message)
-        bot_response = poke.get_pokemon_info(user_message)
+        # bot_response = poke.get_pokemon_info(user_message)
+        bot_response = openai_api.generate_text(user_message)
         formatted_bot_response = f'bot: {bot_response}'
         chat_messages.append(formatted_bot_response)
 
