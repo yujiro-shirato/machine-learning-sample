@@ -7,6 +7,8 @@ pip install pandas
 
 pip install scikit-learn
 
+pip install openai
+
 # 仮想環境の作成（例）
 python -m venv myenv
 
