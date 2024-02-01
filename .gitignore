@@ -161,4 +161,6 @@ cython_debug/
 #.idea/
 
 # api-key file
+.properties
+*..properties
 config.properties
