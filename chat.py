@@ -22,7 +22,9 @@ def send_message():
 
         # Botからの応答を生成
         # bot_response = poke.get_pokemon_info(user_message)
-        bot_response = openai_api.generate_text(user_message)
+        # bot_response = openai_api.generate_text(user_message)
+        # bot_response = openai_api.generate_babbage(user_message)
+        bot_response = openai_api.generate_gpt35(user_message)
         formatted_bot_response = f'bot: {bot_response}'
         chat_messages.append(formatted_bot_response)
 
